@@ -1,0 +1,4 @@
+curl \
+  -H 'Content-Type: application/json' \
+  -d "{\"image\": \"registry.olxbr.io:5000/treinamento-devops/$CI_PROJECT_NAMESPACE:$CI_COMMIT_TAG\"}" \
+  -X PATCH "$COPS_URL"
